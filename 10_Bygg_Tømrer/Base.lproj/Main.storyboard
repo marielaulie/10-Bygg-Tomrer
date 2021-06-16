@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uVF-aw-VwR">
+    <device id="ipad10_2" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_0_Bygg_Tømrer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bygg og Anlegg: Tømrer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3p-Ip-EAG">
+                                <rect key="frame" x="286.5" y="221" width="507" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8u1-XA-RbH">
+                                <rect key="frame" x="306.5" y="381" width="467" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Trykk her for å se introduksjonsvideo"/>
+                                <connections>
+                                    <action selector="introvideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6fH-4O-MNG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lg-9C-JKt">
+                                <rect key="frame" x="387.5" y="529" width="305" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Trykk her for å gå videre"/>
+                                <connections>
+                                    <segue destination="ccn-cY-2rR" kind="show" id="dkf-Ad-Paw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1lg-9C-JKt" firstAttribute="top" secondItem="8u1-XA-RbH" secondAttribute="bottom" constant="100" id="aew-h8-gJu"/>
+                            <constraint firstItem="w3p-Ip-EAG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fby-4d-3ax"/>
+                            <constraint firstItem="8u1-XA-RbH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="krY-IR-eLm"/>
+                            <constraint firstItem="8u1-XA-RbH" firstAttribute="top" secondItem="w3p-Ip-EAG" secondAttribute="bottom" constant="100" id="rHW-GN-vK6"/>
+                            <constraint firstItem="1lg-9C-JKt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sDS-6E-Xpk"/>
+                            <constraint firstItem="8u1-XA-RbH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yNF-wk-Xlm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EgU-at-o1Y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856.66666666666663" y="92.592592592592581"/>
+        </scene>
+        <!--Bygge Hus-->
+        <scene sceneID="vew-rk-oX1">
+            <objects>
+                <viewController id="ccn-cY-2rR" customClass="ByggeHus" customModule="_0_Bygg_Tømrer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7k2-AY-fWv">
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hva trengs for å bygge et hus?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjt-Gk-UWj">
+                                <rect key="frame" x="219.5" y="155" width="641.5" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diskuter i gruppen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4r-ug-DIu">
+                                <rect key="frame" x="422.5" y="245" width="235" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VL8-7Z-YKE">
+                                <rect key="frame" x="434" y="381" width="212" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Trykk her for tips"/>
+                                <connections>
+                                    <segue destination="Evb-dd-c33" kind="show" id="pKi-OX-kyN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGE-KW-bPD">
+                                <rect key="frame" x="387.5" y="559" width="305" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Trykk her for å gå videre"/>
+                                <connections>
+                                    <segue destination="fys-XJ-RLd" kind="show" id="5Zb-aX-p71"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VL8-7Z-YKE" firstAttribute="centerY" secondItem="7k2-AY-fWv" secondAttribute="centerY" id="3sB-2w-UHx"/>
+                            <constraint firstItem="VL8-7Z-YKE" firstAttribute="centerX" secondItem="7k2-AY-fWv" secondAttribute="centerX" id="4ck-7M-WdA"/>
+                            <constraint firstItem="tjt-Gk-UWj" firstAttribute="centerX" secondItem="7k2-AY-fWv" secondAttribute="centerX" id="VLx-5z-gxR"/>
+                            <constraint firstItem="jGE-KW-bPD" firstAttribute="top" secondItem="VL8-7Z-YKE" secondAttribute="bottom" constant="130" id="b15-WH-oXb"/>
+                            <constraint firstItem="H4r-ug-DIu" firstAttribute="centerX" secondItem="7k2-AY-fWv" secondAttribute="centerX" id="bCn-nz-Uss"/>
+                            <constraint firstItem="jGE-KW-bPD" firstAttribute="centerX" secondItem="7k2-AY-fWv" secondAttribute="centerX" id="cwa-r4-QLZ"/>
+                            <constraint firstItem="VL8-7Z-YKE" firstAttribute="top" secondItem="H4r-ug-DIu" secondAttribute="bottom" constant="100" id="eIC-vW-StK"/>
+                            <constraint firstItem="H4r-ug-DIu" firstAttribute="top" secondItem="tjt-Gk-UWj" secondAttribute="bottom" constant="30" id="xkQ-en-iYD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Y3f-N1-wNP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uDi-HL-vdp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tUi-7y-cCi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856.66666666666663" y="775.55555555555554"/>
+        </scene>
+        <!--Da Vinci-->
+        <scene sceneID="Cg9-1A-bx2">
+            <objects>
+                <viewController id="fys-XJ-RLd" customClass="DaVinci" customModule="_0_Bygg_Tømrer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m3u-06-dG8">
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Nå skal dere bygge Da Vinci broen!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PeF-r2-drL">
+                                <rect key="frame" x="172" y="121" width="736" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Det er tre forskjellige typer byggeklosser. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alp-c0-2CC">
+                                <rect key="frame" x="276.5" y="207" width="527" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6N-S2-Ikj">
+                                <rect key="frame" x="251" y="295" width="26" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ftk-Qt-hem">
+                                <rect key="frame" x="527" y="295" width="26" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="3." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAL-cg-9c2">
+                                <rect key="frame" x="803" y="295" width="26" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ch9-4w-r6q">
+                                <rect key="frame" x="420" y="341" width="240" height="128"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EAS-Bd-HLF">
+                                <rect key="frame" x="144" y="341" width="240" height="128"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Yl-HQ-PCZ">
+                                <rect key="frame" x="696" y="341" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acH-Bs-dBL">
+                                <rect key="frame" x="144" y="532" width="253" height="78"/>
+                                <string key="text">Sett klossene sammen til en bro. 
+Sluttresultatet skal se slik ut:</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Riz-m7-kEy">
+                                <rect key="frame" x="251" y="618" width="342" height="171"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QlK-kN-xyp">
+                                <rect key="frame" x="664" y="679" width="305" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Trykk her for å gå videre"/>
+                                <connections>
+                                    <segue destination="O2c-vU-Zb1" kind="show" id="K0S-c8-flo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="acH-Bs-dBL" firstAttribute="leading" secondItem="KOn-nd-BGB" secondAttribute="leading" constant="144" id="0zg-87-dMo"/>
+                            <constraint firstItem="Ftk-Qt-hem" firstAttribute="centerX" secondItem="m3u-06-dG8" secondAttribute="centerX" id="6uV-hl-hCH"/>
+                            <constraint firstItem="Ftk-Qt-hem" firstAttribute="leading" secondItem="v6N-S2-Ikj" secondAttribute="trailing" constant="250" id="8su-WL-nB3"/>
+                            <constraint firstItem="8Yl-HQ-PCZ" firstAttribute="top" secondItem="xAL-cg-9c2" secondAttribute="bottom" constant="10" id="9Vb-Wn-mtv"/>
+                            <constraint firstItem="Ftk-Qt-hem" firstAttribute="centerX" secondItem="m3u-06-dG8" secondAttribute="centerX" id="BmS-hh-Lcg"/>
+                            <constraint firstItem="Riz-m7-kEy" firstAttribute="leading" secondItem="KOn-nd-BGB" secondAttribute="leading" constant="251" id="F33-ik-HAI"/>
+                            <constraint firstItem="Riz-m7-kEy" firstAttribute="top" secondItem="acH-Bs-dBL" secondAttribute="bottom" constant="8" id="Nvq-gZ-dnJ"/>
+                            <constraint firstItem="8Yl-HQ-PCZ" firstAttribute="centerY" secondItem="m3u-06-dG8" secondAttribute="centerY" id="OgG-aM-hkR"/>
+                            <constraint firstItem="Ftk-Qt-hem" firstAttribute="top" secondItem="alp-c0-2CC" secondAttribute="bottom" constant="50" id="R0c-Gv-adf"/>
+                            <constraint firstItem="ch9-4w-r6q" firstAttribute="leading" secondItem="EAS-Bd-HLF" secondAttribute="trailing" constant="36" id="VOc-KH-KH6"/>
+                            <constraint firstItem="EAS-Bd-HLF" firstAttribute="top" secondItem="v6N-S2-Ikj" secondAttribute="bottom" constant="10" id="VkR-Cc-oLP"/>
+                            <constraint firstItem="alp-c0-2CC" firstAttribute="centerX" secondItem="m3u-06-dG8" secondAttribute="centerX" id="Y3r-pl-RpD"/>
+                            <constraint firstItem="ch9-4w-r6q" firstAttribute="top" secondItem="Ftk-Qt-hem" secondAttribute="bottom" constant="10" id="cXS-cV-hor"/>
+                            <constraint firstItem="PeF-r2-drL" firstAttribute="centerX" secondItem="m3u-06-dG8" secondAttribute="centerX" id="dgm-yR-irb"/>
+                            <constraint firstItem="8Yl-HQ-PCZ" firstAttribute="leading" secondItem="ch9-4w-r6q" secondAttribute="trailing" constant="36" id="eYU-8L-8ZM"/>
+                            <constraint firstItem="xAL-cg-9c2" firstAttribute="leading" secondItem="Ftk-Qt-hem" secondAttribute="trailing" constant="250" id="fEn-4k-U98"/>
+                            <constraint firstItem="EAS-Bd-HLF" firstAttribute="centerY" secondItem="m3u-06-dG8" secondAttribute="centerY" id="iPD-Ld-xdx"/>
+                            <constraint firstItem="QlK-kN-xyp" firstAttribute="top" secondItem="8Yl-HQ-PCZ" secondAttribute="bottom" constant="210" id="oGd-AB-uXs"/>
+                            <constraint firstItem="QlK-kN-xyp" firstAttribute="leading" secondItem="Riz-m7-kEy" secondAttribute="trailing" constant="71" id="qv7-sj-1XB"/>
+                            <constraint firstItem="ch9-4w-r6q" firstAttribute="centerX" secondItem="m3u-06-dG8" secondAttribute="centerX" id="tef-sB-MUk"/>
+                            <constraint firstItem="alp-c0-2CC" firstAttribute="top" secondItem="PeF-r2-drL" secondAttribute="bottom" constant="30" id="xfc-kG-ALf"/>
+                            <constraint firstItem="ch9-4w-r6q" firstAttribute="centerY" secondItem="m3u-06-dG8" secondAttribute="centerY" id="zTy-pt-FEu"/>
+                            <constraint firstItem="acH-Bs-dBL" firstAttribute="top" secondItem="EAS-Bd-HLF" secondAttribute="bottom" constant="60" id="zqr-xQ-Uaj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KOn-nd-BGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wtf-oX-99a"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yay-bv-5au" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="851.66666666666663" y="1453.3333333333333"/>
+        </scene>
+        <!--Videoer-->
+        <scene sceneID="jUv-51-K3U">
+            <objects>
+                <viewController id="O2c-vU-Zb1" customClass="Videoer" customModule="_0_Bygg_Tømrer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RmZ-Yw-crk">
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvordan er det å være tømrer? " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbW-su-upG">
+                                <rect key="frame" x="215" y="127" width="650.5" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trykk på videoene for å se dem. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VlY-Kp-9FC">
+                                <rect key="frame" x="335.5" y="197" width="409" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aq8-M6-Elc">
+                                <rect key="frame" x="497.5" y="381" width="85" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Henrik"/>
+                                <connections>
+                                    <action selector="henrik:" destination="O2c-vU-Zb1" eventType="touchUpInside" id="mes-dB-Pu7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfG-eM-m8m">
+                                <rect key="frame" x="491" y="469" width="98" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Tjerand"/>
+                                <connections>
+                                    <action selector="tjerand:" destination="O2c-vU-Zb1" eventType="touchUpInside" id="Y4z-nF-4sv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKV-9O-zKC">
+                                <rect key="frame" x="451.5" y="293" width="177" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Tømrerlærling"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Aq8-M6-Elc" firstAttribute="centerX" secondItem="RmZ-Yw-crk" secondAttribute="centerX" id="1Cj-ko-9YX"/>
+                            <constraint firstItem="VlY-Kp-9FC" firstAttribute="centerX" secondItem="RmZ-Yw-crk" secondAttribute="centerX" id="3Gs-Ko-O5x"/>
+                            <constraint firstItem="cfG-eM-m8m" firstAttribute="top" secondItem="Aq8-M6-Elc" secondAttribute="bottom" constant="40" id="9PJ-4u-uBk"/>
+                            <constraint firstItem="Aq8-M6-Elc" firstAttribute="centerY" secondItem="RmZ-Yw-crk" secondAttribute="centerY" id="HVa-yT-9cu"/>
+                            <constraint firstItem="Aq8-M6-Elc" firstAttribute="top" secondItem="SKV-9O-zKC" secondAttribute="bottom" constant="40" id="ID7-xM-dKw"/>
+                            <constraint firstItem="cfG-eM-m8m" firstAttribute="centerX" secondItem="RmZ-Yw-crk" secondAttribute="centerX" id="W5h-ff-cdm"/>
+                            <constraint firstItem="WbW-su-upG" firstAttribute="centerX" secondItem="RmZ-Yw-crk" secondAttribute="centerX" id="e1F-fw-dRH"/>
+                            <constraint firstItem="VlY-Kp-9FC" firstAttribute="top" secondItem="WbW-su-upG" secondAttribute="bottom" constant="10" id="m3O-ue-HBU"/>
+                            <constraint firstItem="SKV-9O-zKC" firstAttribute="centerX" secondItem="RmZ-Yw-crk" secondAttribute="centerX" id="ojO-56-eyI"/>
+                            <constraint firstItem="SKV-9O-zKC" firstAttribute="top" secondItem="VlY-Kp-9FC" secondAttribute="bottom" constant="60" id="onr-sf-Qvu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hao-kM-e8w"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SiB-4j-XSQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iRf-HZ-sxe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852" y="2195"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nv2-WJ-fGe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uVF-aw-VwR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LcI-i3-iyB">
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zMe-VG-hGx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xpx-It-hbD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.88888888888889" y="92.592592592592581"/>
+        </scene>
+        <!--Video Bygge Hus-->
+        <scene sceneID="ghL-yO-TG7">
+            <objects>
+                <viewController id="Evb-dd-c33" customClass="Video_ByggeHus" customModule="_0_Bygg_Tømrer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3k1-xG-OMp">
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hyp-i5-Vzd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uwU-Nn-TN9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wak-n4-u4p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="203" y="776"/>
+        </scene>
+    </scenes>
+</document>
